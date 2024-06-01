@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="Anchor" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI1Controller">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #0D0332;">
+         <children>
+            <Pane layoutX="350.0" layoutY="-7.0" prefHeight="507.0" prefWidth="350.0" style="-fx-background-color: #D1E0E4;">
+               <children>
+                  <TextField fx:id="UserNameTextField" layoutX="90.0" layoutY="195.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="31.0" prefWidth="205.0" promptText="Username" style="-fx-background-color: #D1E0E4; -fx-border-width: 0 0 2 0; -fx-border-color: #0D0332;">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="135.0" layoutY="120.0" prefHeight="74.0" prefWidth="116.0" text="Login" textAlignment="CENTER" textFill="#0d0332">
+                     <font>
+                        <Font name="Britannic Bold" size="34.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="66.0" layoutY="12.0" prefHeight="74.0" prefWidth="227.0" text="Learn with us" textFill="#0d0332">
+                     <font>
+                        <Font name="Bell MT Bold" size="34.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="58.0" layoutY="46.0" prefHeight="74.0" prefWidth="239.0" text="Without fiar 💗" textFill="#0d0332">
+                     <font>
+                        <Font name="Bell MT Bold" size="34.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="PasswordTextField" layoutX="90.0" layoutY="247.0" prefHeight="26.0" prefWidth="205.0" promptText="Password" style="-fx-background-color: #D1E0E4; -fx-border-width: 0 0 2 0; -fx-border-color: #0D0332;" />
+                  <JFXButton fx:id="button" layoutX="125.0" layoutY="322.0" onAction="#Loging" prefHeight="51.0" prefWidth="122.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2.5 2.5 2.5 2.5;" styleClass="outline1" stylesheets="@fxml.css" text="Login">
+                     <font>
+                        <Font name="Cambria Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <Label fx:id="label" alignment="CENTER" layoutX="63.0" layoutY="292.0" prefHeight="17.0" prefWidth="247.0" textFill="RED">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink layoutX="120.0" layoutY="399.0" onAction="#ForgetPassword" text="Forget Password?" textFill="#0d0332">
+                     <font>
+                        <Font name="Cambria Bold" size="15.0" />
+                     </font>
+                  </Hyperlink>
+                  <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="49.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-lock-unscreen.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="50.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@username.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fitHeight="385.0" fitWidth="306.0" layoutX="29.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@UI.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="41.0" prefHeight="54.0" prefWidth="192.0" text="Educational " textFill="#d1e0e4">
+               <font>
+                  <Font name="Bell MT Bold" size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="37.0" prefHeight="54.0" prefWidth="192.0" text="Center" textFill="#d1e0e4">
+               <font>
+                  <Font name="Bell MT Bold" size="34.0" />
+               </font>
+            </Label>
+            <Button layoutX="75.0" layoutY="429.0" mnemonicParsing="false" onAction="#facebook" prefHeight="44.0" prefWidth="60.0" style="-fx-background-color: #0D0332;" text="Button" textFill="#0d0332">
+               <graphic>
+                  <ImageView fx:id="FacebookButton" fitHeight="39.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@facebook_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button layoutX="135.0" layoutY="429.0" mnemonicParsing="false" onAction="#youtube" prefHeight="44.0" prefWidth="60.0" style="-fx-background-color: #0D0332;" text="Button" textFill="#0d0332">
+               <graphic>
+                  <ImageView fx:id="YoutupeButton" fitHeight="43.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #095DAB;">
+                     <image>
+                        <Image url="@youtube.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="255.0" layoutY="429.0" mnemonicParsing="false" onAction="#instagram" prefHeight="44.0" prefWidth="60.0" style="-fx-background-color: #0D0332;" text="Button" textFill="#0d0332">
+               <graphic>
+                  <ImageView fx:id="InstageramButton" fitHeight="43.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #095DAB;">
+                     <image>
+                        <Image url="@insta.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="195.0" layoutY="429.0" mnemonicParsing="false" onAction="#twitter" prefHeight="44.0" prefWidth="60.0" style="-fx-background-color: #0D0332;" text="Button" textFill="#0d0332">
+               <graphic>
+                  <ImageView fx:id="TwitterButton" fitHeight="43.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@twitar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

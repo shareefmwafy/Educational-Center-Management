@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderpane" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLController">
+   <left>
+      <Pane prefHeight="657.0" prefWidth="206.0" style="-fx-background-color: #D1E0E4;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton layoutY="125.0" onMouseClicked="#Home" prefHeight="44.0" prefWidth="199.0" styleClass="menu" stylesheets="@fxml.css" text=" Home">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.21052631735801697" green="0.18615984916687012" blue="0.18615984916687012" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <JFXButton layoutX="1.0" layoutY="181.0" onMouseClicked="#TeacherPage" prefHeight="44.0" prefWidth="199.0" styleClass="menu" stylesheets="@fxml.css" text="Teacher">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="235.0" onMouseClicked="#StudentPage" prefHeight="44.0" prefWidth="199.0" styleClass="menu" stylesheets="@fxml.css" text="Students">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="297.0" onMouseClicked="#GroupsPage" prefHeight="44.0" prefWidth="199.0" styleClass="menu" stylesheets="@fxml.css" text="Groups">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="3.0" layoutY="417.0" onMouseClicked="#LogoutPage" prefHeight="44.0" prefWidth="199.0" styleClass="menu" stylesheets="@fxml.css" text="Log Out">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="22.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@home%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="22.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Teacher1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="44.0" layoutX="17.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@students.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="30.0" layoutX="20.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@group.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="30.0" layoutX="15.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logout.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="72.0" fitWidth="111.0" layoutX="64.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@AddingUpperButtons.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="63.0" layoutY="556.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Made By">
+               <font>
+                  <Font name="Blackadder ITC" size="20.0" />
+               </font>
+            </Text>
+            <Hyperlink layoutX="26.0" layoutY="572.0" onAction="#ayham" text="Ayham Omar Dwairy" textFill="#0d0332">
+               <font>
+                  <Font name="Cambria Bold" size="15.0" />
+               </font></Hyperlink>
+            <Hyperlink layoutX="27.0" layoutY="602.0" onAction="#shareef" text="Shareef Imad Mwafy" textFill="#0d0332">
+               <font>
+                  <Font name="Cambria Bold" size="15.0" />
+               </font></Hyperlink>
+            <JFXButton layoutY="356.0" onMouseClicked="#SettingPage" prefHeight="44.0" prefWidth="199.0" styleClass="menu" stylesheets="@fxml.css" text="Setting">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="30.0" fitWidth="121.0" layoutX="20.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@settings.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="WelcomLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="105.0" prefHeight="20.0" prefWidth="173.0">
+               <font>
+                  <Font name="Cambria Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <Pane fx:id="HomePane" prefHeight="650.0" prefWidth="800.0" style="-fx-background-color: #EEEEEE;" stylesheets="@fxml.css" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="12.0" layoutY="89.0" prefHeight="214.0" prefWidth="388.0" style="-fx-background-color: #0D0332; -fx-background-radius: 10px;">
+               <children>
+                  <Text fill="WHITE" layoutX="26.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Specialization" textAlignment="CENTER" wrappingWidth="132.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" ">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="281.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Count" textAlignment="CENTER">
+                     <font>
+                        <Font name="Cambria Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="9.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scientific Students" textAlignment="CENTER" wrappingWidth="166.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Line endX="230.0" layoutX="209.0" layoutY="40.0" startX="-209.0" stroke="#d1e0e4" />
+                  <Text fill="WHITE" layoutX="3.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Literary Students" textAlignment="CENTER" wrappingWidth="166.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="3.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Commercial Students" textAlignment="CENTER" wrappingWidth="198.99999999999994">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="-3.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Industrial Students" textAlignment="CENTER" wrappingWidth="198.99999999999994">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="ScientificStudentCount" alignment="CENTER" layoutX="262.0" layoutY="47.0" prefHeight="17.0" prefWidth="87.0" text="xxx" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="LiteraryStudentCount" alignment="CENTER" layoutX="262.0" layoutY="83.0" prefHeight="17.0" prefWidth="87.0" text="xxx" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="CommercialStudentCount" alignment="CENTER" layoutX="262.0" layoutY="118.0" prefHeight="17.0" prefWidth="87.0" text="xxx" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="IndustrialStudentCount" alignment="CENTER" layoutX="262.0" layoutY="154.0" prefHeight="17.0" prefWidth="87.0" text="xxx" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="402.0" layoutY="89.0" prefHeight="214.0" prefWidth="388.0" style="-fx-background-color: #0D0332; -fx-background-radius: 10px;">
+               <children>
+                  <Text fill="WHITE" layoutX="26.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Specialization" textAlignment="CENTER" wrappingWidth="132.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" ">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="281.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Count" textAlignment="CENTER">
+                     <font>
+                        <Font name="Cambria Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="9.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scientific Teacher" textAlignment="CENTER" wrappingWidth="166.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Line endX="174.0" layoutX="209.0" layoutY="40.0" startX="-209.0" stroke="#d1e0e4" />
+                  <Text fill="WHITE" layoutX="3.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Literary Teacher" textAlignment="CENTER" wrappingWidth="166.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="3.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Commercial Teacher" textAlignment="CENTER" wrappingWidth="198.99999999999994">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="-3.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Industrial Teacher" textAlignment="CENTER" wrappingWidth="198.99999999999994">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="ScientificTeacherCount" alignment="CENTER" layoutX="265.0" layoutY="50.0" prefHeight="17.0" prefWidth="87.0" text="xxx" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="LiteraryTeacherCount" alignment="CENTER" layoutX="265.0" layoutY="83.0" prefHeight="17.0" prefWidth="87.0" text="xxx" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="CommercialTeacherCount" alignment="CENTER" layoutX="265.0" layoutY="118.0" prefHeight="17.0" prefWidth="87.0" text="xxx" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="IndustrialTeacherCount" alignment="CENTER" layoutX="265.0" layoutY="154.0" prefHeight="17.0" prefWidth="87.0" text="xxx" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="121.0" fitWidth="174.0" layoutX="5.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@stats-unscreen.gif" />
+               </image>
+            </ImageView>
+            <Text layoutX="317.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Statistics" textAlignment="CENTER" wrappingWidth="166.0">
+               <font>
+                  <Font name="Cambria Bold" size="22.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="123.0" fitWidth="182.0" layoutX="624.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@stats-unscreen.gif" />
+               </image>
+            </ImageView>
+            <BarChart fx:id="StudentChart" layoutX="12.0" layoutY="311.0" prefHeight="325.0" prefWidth="379.0" style="-fx-alternative-column-fill-visible: red; -fx-alternative-row-fill-visible: red;" title="Student">
+              <xAxis>
+                <CategoryAxis fx:id="y" label="SPECILIZATION" prefWidth="397.0" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis label="Number of Student" prefWidth="53.0" side="LEFT" fx:id="x" />
+              </yAxis>
+            </BarChart>
+            <BarChart fx:id="TeacherChart" layoutX="407.0" layoutY="311.0" prefHeight="325.0" prefWidth="379.0" style="-fx-alternative-column-fill-visible: red; -fx-alternative-row-fill-visible: red;" title="Teacher">
+               <xAxis>
+                  <CategoryAxis fx:id="y1" label="SPECILIZATION" prefWidth="397.0" side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis label="Number of Teacher" prefWidth="53.0" side="LEFT" fx:id="x1" />
+               </yAxis>
+            </BarChart>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReportsController">
+   <children>
+      <Pane layoutY="-1.0" prefHeight="88.0" prefWidth="800.0" style="-fx-background-color: #0D0332;">
+         <children>
+            <Label layoutX="288.0" layoutY="7.0" prefHeight="74.0" prefWidth="225.0" text=" Reports Page" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Line endY="406.0" layoutX="400.0" layoutY="244.0" startY="-157.0" />
+      <JFXButton layoutX="686.0" layoutY="606.0" onAction="#CreateReports" prefHeight="39.0" prefWidth="105.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2.5 2.5 2.5 2.5;" styleClass="outline" stylesheets="@fxml.css" text="Create">
+         <font>
+            <Font name="Cambria Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXRadioButton layoutX="140.0" layoutY="96.0" prefHeight="39.0" prefWidth="126.0" text="Student">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="toggle" />
+         </toggleGroup>
+         <selectedColor>
+            <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+         </selectedColor>
+         <unSelectedColor>
+            <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+         </unSelectedColor>
+      </JFXRadioButton>
+      <JFXRadioButton layoutX="560.0" layoutY="96.0" prefHeight="39.0" prefWidth="126.0" text="Teacher" toggleGroup="$toggle">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+         <selectedColor>
+            <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+         </selectedColor>
+         <unSelectedColor>
+            <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+         </unSelectedColor>
+      </JFXRadioButton>
+      <JFXRadioButton layoutX="24.0" layoutY="231.0" text="Show All information About Students">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="toggle1" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton layoutX="20.0" layoutY="481.0" text="Show Student At Select Stage" toggleGroup="$toggle1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton layoutX="24.0" layoutY="281.0" text="Show Students with net Account" toggleGroup="$toggle1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton layoutX="24.0" layoutY="333.0" text="RadioButton" toggleGroup="$toggle1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton layoutX="24.0" layoutY="382.0" toggleGroup="$toggle1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton layoutX="24.0" layoutY="431.0" text="RadioButton" toggleGroup="$toggle1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton layoutX="420.0" layoutY="231.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="toggle2" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton layoutX="420.0" layoutY="281.0" toggleGroup="$toggle2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton layoutX="420.0" layoutY="333.0" toggleGroup="$toggle2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton layoutX="420.0" layoutY="382.0" toggleGroup="$toggle2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton layoutX="420.0" layoutY="431.0" toggleGroup="$toggle2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton layoutX="420.0" layoutY="481.0" toggleGroup="$toggle2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXRadioButton>
+   </children>
+</Pane>

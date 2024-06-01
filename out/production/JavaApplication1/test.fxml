@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<?import com.gn.lab.GNButton?>
+<BorderPane prefHeight="667.0" prefWidth="600.0"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <top>
+      <Pane prefHeight="38.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="253.0" layoutY="6.0" text="JAVAFX Buttons ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Design 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: WHITE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <JFXButton layoutX="61.0" layoutY="215.0" prefHeight="36.0" prefWidth="136.0" text="BUTTON" />
+                              <JFXButton layoutX="209.0" layoutY="215.0" prefHeight="36.0" prefWidth="136.0" text="TEXT COLORED" textFill="#0a54dd" />
+                              <JFXButton disable="true" layoutX="357.0" layoutY="215.0" prefHeight="36.0" prefWidth="136.0" text="DISABLED" />
+                              <JFXButton buttonType="RAISED" layoutX="64.0" layoutY="374.0" prefHeight="36.0" prefWidth="136.0" style="-fx-background-color: #F4F4F4;" text="BUTTON" />
+                              <JFXButton buttonType="RAISED" layoutX="212.0" layoutY="374.0" prefHeight="36.0" prefWidth="136.0" style="-fx-background-color: #01054C;" text="COLORED" textFill="WHITE" />
+                              <JFXButton buttonType="RAISED" disable="true" layoutX="360.0" layoutY="374.0" prefHeight="36.0" prefWidth="136.0" style="-fx-background-color: #F4F4F4;" text="DISABLED" />
+                              <Label layoutX="58.0" layoutY="314.0" prefHeight="27.0" prefWidth="506.0" style="-fx-background-color: #B4D1E3;" text="Raised Buttons" textFill="#595757">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Separator layoutX="58.0" layoutY="344.0" prefHeight="0.0" prefWidth="506.0" />
+                           </children>
+                        </Pane>
+                        <Label layoutX="58.0" layoutY="168.0" prefWidth="506.0" style="-fx-background-color: #B4D1E3;" text="Flat Buttons" textFill="#494949">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Separator layoutX="58.0" layoutY="198.0" prefHeight="0.0" prefWidth="506.0" />
+                        <Button layoutX="59.0" layoutY="86.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="134.0" text="BUTTON" />
+                        <Label layoutX="58.0" layoutY="33.0" prefHeight="27.0" prefWidth="506.0" style="-fx-background-color: #B4D1E3;" text="Normal" textFill="#494949">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Separator layoutX="59.0" layoutY="63.0" prefHeight="0.0" prefWidth="506.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Design 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: WHITE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <JFXButton buttonType="RAISED" layoutX="45.0" layoutY="108.0" prefHeight="40.0" prefWidth="42.0" style="-fx-background-color: #02C852; -fx-background-radius: 100px;" text="C" textFill="WHITE" />
+                              <JFXButton buttonType="RAISED" layoutX="146.0" layoutY="113.0" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: #02C852; -fx-background-radius: 20px;" text="BUTTON" textFill="WHITE" />
+                              <JFXButton id="windows7" buttonType="RAISED" layoutX="300.0" layoutY="113.0" prefHeight="31.0" prefWidth="133.0" style="-fx-background-color: #02C852;" stylesheets="@css/style.css" text="BUTTON" textFill="WHITE" />
+                              <JFXButton id="green" layoutX="313.0" layoutY="191.0" prefHeight="35.0" prefWidth="107.0" stylesheets="@css/style.css" text="BUTTON" />
+                              <JFXButton id="sale" layoutX="182.0" layoutY="194.0" stylesheets="@css/style.css" text="BUTTON" />
+                              <JFXButton id="bevel" layoutX="459.0" layoutY="192.0" prefHeight="33.0" prefWidth="98.0" stylesheets="@css/style.css" text="BUTTON" />
+                              <JFXButton id="line" layoutX="188.0" layoutY="281.0" prefHeight="37.0" prefWidth="87.0" stylesheets="@css/style.css" text="BUTTON" />
+                              <JFXButton id="outline" layoutX="324.0" layoutY="280.0" prefHeight="38.0" prefWidth="86.0" stylesheets="@css/style.css" text="BUTTON" />
+                              <JFXButton id="yellow" layoutX="234.0" layoutY="363.0" prefHeight="48.0" prefWidth="132.0" stylesheets="@css/style.css" text="BUTTON" />
+                              <JFXButton id="shiny" layoutX="32.0" layoutY="189.0" stylesheets="@css/style.css" text="BUTTON" />
+                              <JFXButton id="dark" layoutX="468.0" layoutY="282.0" stylesheets="@css/style.css" text="BUTTON" />
+                              <JFXButton id="but" layoutX="45.0" layoutY="281.0" prefHeight="37.0" prefWidth="84.0" stylesheets="@css/style.css" text="BUTTON" />
+                              <JFXButton id="shiny_r" layoutX="464.0" layoutY="108.0" stylesheets="@css/style.css" text="BUTTON" />
+                           </children>
+                        </Pane>
+                        <Label layoutX="46.0" layoutY="33.0" prefHeight="27.0" prefWidth="506.0" style="-fx-background-color: #B4D1E3;" text="Style Button" textFill="#494949">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Separator layoutX="46.0" layoutY="63.0" prefHeight="0.0" prefWidth="506.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Design 3">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutX="58.0" layoutY="53.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: WHITE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+
+                               <GNButton layoutX="85.0" layoutY="126.0" prefHeight="54.0" prefWidth="182.0" text="Swipe" />
+                               <GNButton buttonType="DIAGONAL_SWIPE" layoutX="304.0" layoutY="126.0" prefHeight="54.0" prefWidth="182.0" text="Diagonal Swipe" />
+                               <GNButton buttonType="CENTRALIZE" layoutX="85.0" layoutY="215.0" prefHeight="54.0" prefWidth="182.0" text="Centralize" />
+                               <GNButton buttonType="SMOOSH" layoutX="304.0" layoutY="215.0" prefHeight="54.0" prefWidth="182.0" text="Smoosh"  />
+                               <GNButton buttonType="ALTERNATE" layoutX="192.0" layoutY="325.0" prefHeight="54.0" prefWidth="182.0" text="Alternate"  />
+
+
+                           </children>
+                        </Pane>
+                        <Label layoutX="56.0" layoutY="43.0" prefHeight="27.0" prefWidth="506.0" style="-fx-background-color: #B4D1E3;" text="Animation Buttons" textFill="#494949">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Separator layoutX="56.0" layoutY="73.0" prefHeight="0.0" prefWidth="506.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>

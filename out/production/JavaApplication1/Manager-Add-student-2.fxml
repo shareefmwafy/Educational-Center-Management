@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderPane2" prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManagerAddStudentConroller2">
+   <center>
+      <Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="360.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="-4.0" prefHeight="54.0" prefWidth="367.0" style="-fx-background-color: #0D0332;">
+               <children>
+                  <Label layoutX="82.0" layoutY="-6.0" prefHeight="66.0" prefWidth="204.0" text=" Student Page" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Text layoutX="142.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+               <font>
+                  <Font name="Cambria Bold" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="CityTextField" alignment="CENTER" layoutX="52.0" layoutY="101.0" prefHeight="27.0" prefWidth="118.0" promptText="City" style="-fx-background-color: transparent; -fx-border-color: #0D0332; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="StreetTextField" alignment="CENTER" layoutX="207.0" layoutY="101.0" prefHeight="27.0" prefWidth="118.0" promptText="Street" style="-fx-background-color: transparent; -fx-border-color: #0D0332; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="EmailTextField" alignment="CENTER" layoutX="121.0" layoutY="176.0" prefHeight="27.0" prefWidth="223.0" promptText="\@gmail.com" style="-fx-background-color: transparent; -fx-border-color: #0D0332; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="PhoneTextField" alignment="CENTER" layoutX="121.0" layoutY="218.0" prefHeight="27.0" prefWidth="223.0" promptText="+97" style="-fx-background-color: transparent; -fx-border-color: #0D0332; -fx-border-width: 0px 0px 2px 0px;" />
+            <Line endX="260.0" layoutX="102.0" layoutY="148.0" opacity="0.5" startX="-105.0" style="-fx-effect: #8CDBC9;" />
+            <Label layoutX="153.0" layoutY="284.0" prefHeight="36.0" prefWidth="63.0" text="Stage">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXRadioButton fx:id="RadioButton12" layoutX="280.0" layoutY="331.0" text="12'th">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+               <selectedColor>
+                  <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+               </selectedColor>
+               <unSelectedColor>
+                  <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+               </unSelectedColor>
+               <toggleGroup>
+                  <ToggleGroup fx:id="toggle" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="RadioButton11" layoutX="155.0" layoutY="331.0" text="11'th" toggleGroup="$toggle">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+               <selectedColor>
+                  <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+               </selectedColor>
+               <unSelectedColor>
+                  <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+               </unSelectedColor>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="RadioButton10" layoutX="25.0" layoutY="331.0" text="10'th" toggleGroup="$toggle">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+               <selectedColor>
+                  <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+               </selectedColor>
+               <unSelectedColor>
+                  <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+               </unSelectedColor>
+            </JFXRadioButton>
+            <Text layoutX="17.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="14.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Text>
+            <Line endX="268.0" layoutX="92.0" layoutY="283.0" opacity="0.5" startX="-92.0" style="-fx-effect: #8CDBC9;" />
+            <Text layoutX="154.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Page 2/3" wrappingWidth="63.0">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="button" layoutX="11.0" layoutY="409.0" onAction="#CanclePage2" prefHeight="37.0" prefWidth="92.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2.5 2.5 2.5 2.5;" styleClass="outline" stylesheets="@fxml.css" text="Cancle">
+               <font>
+                  <Font name="Cambria Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="261.0" layoutY="409.0" onAction="#OpenPage3" prefHeight="37.0" prefWidth="92.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2.5 2.5 2.5 2.5;" styleClass="outline" stylesheets="@fxml.css" text="Next">
+               <font>
+                  <Font name="Cambria Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="label" alignment="CENTER" layoutX="121.0" layoutY="372.0" prefHeight="18.0" prefWidth="129.0" textFill="RED">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

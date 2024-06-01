@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderPane1" prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManagerAddStudentController">
+   <bottom>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="360.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="54.0" prefWidth="360.0" style="-fx-background-color: #0D0332;">
+               <children>
+                  <Text fill="WHITE" layoutX="115.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Student" wrappingWidth="135.9999877929688">
+                     <font>
+                        <Font name="Cambria Bold" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Text layoutX="149.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+               <font>
+                  <Font name="Cambria Bold" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="FirstNameTextField" layoutX="25.0" layoutY="103.0" prefHeight="25.0" prefWidth="90.0" promptText="First Name" style="-fx-background-color: transparent; -fx-border-color: #0D0332; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="MidNameTextField" layoutX="138.0" layoutY="103.0" prefHeight="25.0" prefWidth="90.0" promptText="Middle Name" style="-fx-background-color: transparent; -fx-border-color: #0D0332; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="LastNameTextField" layoutX="252.0" layoutY="103.0" prefHeight="25.0" prefWidth="90.0" promptText="Last Name" style="-fx-background-color: transparent; -fx-border-color: #0D0332; -fx-border-width: 0px 0px 2px 0px;" />
+            <Line endX="254.0" layoutX="106.0" layoutY="163.0" opacity="0.5" startX="-105.0" style="-fx-effect: #8CDBC9;" />
+            <Text layoutX="16.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID" textAlignment="CENTER">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="StudentIDTextField" layoutX="111.0" layoutY="173.0" prefHeight="25.0" prefWidth="179.0" style="-fx-background-color: transparent; -fx-border-color: #0D0332; -fx-border-width: 0px 0px 2px 0px;" />
+            <Text layoutX="12.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Birthdate">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="DatapickerBirthdate" editable="false" layoutX="109.0" layoutY="290.0" prefHeight="25.0" prefWidth="179.0" promptText="Birhtdate" style="-fx-background-color: #0D0332;" />
+            <Text layoutX="14.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </Text>
+            <JFXRadioButton fx:id="MaleRadioButton" layoutX="102.0" layoutY="348.0" text="Male">
+               <unSelectedColor>
+                  <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+               </unSelectedColor>
+               <selectedColor>
+                  <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+               </selectedColor>
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="gender" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="FemaleRadioButton" layoutX="238.0" layoutY="348.0" text="Female" toggleGroup="$gender">
+               <unSelectedColor>
+                  <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+               </unSelectedColor>
+               <selectedColor>
+                  <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+               </selectedColor>
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </JFXRadioButton>
+            <Text layoutX="18.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" textAlignment="CENTER">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </Text>
+            <Label layoutX="150.0" layoutY="422.0" prefHeight="28.0" prefWidth="54.0" text="Page 1/3">
+               <font>
+                  <Font name="Cambria" size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="7.0" layoutY="408.0" mnemonicParsing="false" onAction="#closePane1" prefHeight="37.0" prefWidth="92.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2.5 2.5 2.5 2.5;" styleClass="outline" stylesheets="@fxml.css" text="Cancle" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="260.0" layoutY="408.0" mnemonicParsing="false" onAction="#openPane2" prefHeight="37.0" prefWidth="92.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2.5 2.5 2.5 2.5;" styleClass="outline" stylesheets="@fxml.css" text="Next" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="PasswordTextField" layoutX="109.0" layoutY="223.0" prefHeight="27.0" prefWidth="184.0" style="-fx-background-color: transparent; -fx-border-color: #0D0332; -fx-border-width: 0px 0px 2px 0px;" />
+            <Label fx:id="label" alignment="CENTER" layoutX="122.0" layoutY="384.0" prefHeight="17.0" prefWidth="123.0" textFill="RED">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>

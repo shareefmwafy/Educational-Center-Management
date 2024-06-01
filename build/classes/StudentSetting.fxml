@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #0D0332;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentSettingController">
+   <children>
+      <Pane layoutX="9.0" layoutY="15.0" prefHeight="515.0" prefWidth="375.0" style="-fx-background-color: #D1E0E4; -fx-border-radius: 20; -fx-border-color: #0D0332; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="11.0" layoutY="16.0" prefHeight="22.0" prefWidth="94.0" text="Your Name" textFill="#0d0332">
+               <font>
+                  <Font name="Bell MT" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="FirstNameTextField" alignment="CENTER" layoutX="14.0" layoutY="46.0" prefHeight="27.0" prefWidth="110.0" promptText="First" style="-fx-border-color: #0D0332;" />
+            <TextField fx:id="MidNameTextField" alignment="CENTER" layoutX="133.0" layoutY="46.0" prefHeight="27.0" prefWidth="110.0" promptText="Middle" style="-fx-border-color: #0D0332;" />
+            <TextField fx:id="LastNameTextField" alignment="CENTER" layoutX="251.0" layoutY="46.0" prefHeight="27.0" prefWidth="110.0" promptText="Last" style="-fx-border-color: #0D0332;" />
+            <TextField fx:id="CityTExtField" alignment="CENTER" layoutX="14.0" layoutY="134.0" prefHeight="27.0" prefWidth="110.0" promptText="City" style="-fx-border-color: #0D0332;" />
+            <TextField fx:id="StreetTextField" alignment="CENTER" layoutX="133.0" layoutY="134.0" prefHeight="27.0" prefWidth="110.0" promptText="Street" style="-fx-border-color: #0D0332;" />
+            <Label layoutX="11.0" layoutY="190.0" prefHeight="22.0" prefWidth="110.0" text="Your E-mail" textFill="#0d0332">
+               <font>
+                  <Font name="Bell MT" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="EmailTextField" alignment="CENTER" layoutX="13.0" layoutY="223.0" prefHeight="27.0" prefWidth="217.0" promptText="E-Mail" style="-fx-border-color: #0D0332;" />
+            <Label layoutX="11.0" layoutY="104.0" prefHeight="22.0" prefWidth="110.0" text="Your Address" textFill="#0d0332">
+               <font>
+                  <Font name="Bell MT" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="279.0" prefHeight="22.0" prefWidth="129.0" text="Phone Number" textFill="#0d0332">
+               <font>
+                  <Font name="Bell MT" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="PhoneNumberTextField" alignment="CENTER" layoutX="14.0" layoutY="312.0" prefHeight="27.0" prefWidth="217.0" promptText="+97" style="-fx-border-color: #0D0332;" />
+         </children>
+      </Pane>
+      <Pane layoutX="262.0" layoutY="104.0" prefHeight="475.0" prefWidth="334.0" style="-fx-background-color: #D1E0E4; -fx-border-radius: 20; -fx-border-color: #0D0332; -fx-background-radius: 20;">
+         <children>
+            <PasswordField fx:id="CurrentPasswordTextField" layoutX="39.0" layoutY="46.0" prefHeight="26.0" prefWidth="205.0" style="-fx-border-color: #0D0332;" />
+            <Label layoutX="37.0" layoutY="14.0" prefHeight="22.0" prefWidth="148.0" text="Current Password" textFill="#0d0332">
+               <font>
+                  <Font name="Bell MT" size="19.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="NewPasswordTextField" layoutX="40.0" layoutY="122.0" prefHeight="26.0" prefWidth="205.0" style="-fx-border-color: #0D0332;" />
+            <Label layoutX="38.0" layoutY="90.0" prefHeight="22.0" prefWidth="148.0" text="New Password" textFill="#0d0332">
+               <font>
+                  <Font name="Bell MT" size="19.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="ConfirmPasswordTextField" layoutX="41.0" layoutY="204.0" prefHeight="26.0" prefWidth="205.0" style="-fx-border-color: #0D0332;" />
+            <Label layoutX="39.0" layoutY="172.0" prefHeight="22.0" prefWidth="148.0" text="Confirm Password" textFill="#0d0332">
+               <font>
+                  <Font name="Bell MT" size="19.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="198.0" layoutY="371.0" onAction="#SaveSetting" prefHeight="51.0" prefWidth="122.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2.5 2.5 2.5 2.5;" styleClass="outline" stylesheets="@fxml.css" text="Save">
+               <font>
+                  <Font name="Cambria Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</Pane>

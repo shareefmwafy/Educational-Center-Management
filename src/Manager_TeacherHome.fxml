@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<!--
+<?xml version="1.0" encoding="UTF-8"?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Manager_TeacherHomeController">
+   <children>
+      <TextField fx:id="FirstNameTextField" layoutX="11.0" layoutY="183.0" prefHeight="25.0" prefWidth="90.0" promptText="First Name" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0D0332;" />
+      <TextField fx:id="SecondNameTextField" layoutX="109.0" layoutY="183.0" prefHeight="25.0" prefWidth="90.0" promptText="Middle Name" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0D0332;" />
+      <TextField fx:id="LastNameTextField" layoutX="208.0" layoutY="183.0" prefHeight="25.0" prefWidth="90.0" promptText="Last Name" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0D0332;" />
+      <Text layoutX="16.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="TeacherIdTexField" layoutX="106.0" layoutY="100.0" prefHeight="27.0" prefWidth="177.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0D0332;" />
+      <Line endX="-192.0" endY="-104.0" layoutX="499.0" layoutY="163.0" opacity="0.5" startX="-192.0" startY="109.0" strokeWidth="0.5">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.125" green="0.4736842215061188" blue="0.4678727984428406" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Line>
+      <Text layoutX="14.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Text>
+      <Line endX="-192.0" endY="-104.0" layoutX="717.0" layoutY="163.0" opacity="0.5" startX="-192.0" startY="109.0" strokeWidth="0.5">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.125" green="0.4736842215061188" blue="0.4678727984428406" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Line>
+      <Text layoutX="609.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="More Operations">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Text>
+      <TableView fx:id="TeacherTable" layoutY="341.0" prefHeight="310.0" prefWidth="800.0">
+         <columns>
+            <TableColumn fx:id="TeacherIDCol" prefWidth="75.0" text="TID" />
+            <TableColumn fx:id="FirstNameCol" prefWidth="75.0" text="First Name" />
+            <TableColumn fx:id="LastNameCol" prefWidth="75.0" text="Last Name" />
+            <TableColumn fx:id="SalaryCol" prefWidth="75.0" text="Salary" />
+            <TableColumn fx:id="StartDateCol" prefWidth="96.0" text="Start Date" />
+            <TableColumn fx:id="CityCol" prefWidth="103.0" text="City" />
+            <TableColumn fx:id="StreetCol" prefWidth="82.0" text="Street" />
+            <TableColumn fx:id="GenderCol" prefWidth="99.0" text="Gender" />
+            <TableColumn fx:id="PhoneNumberCol" prefWidth="119.0" text="Phone Number" />
+         </columns>
+      </TableView>
+      <Pane prefHeight="86.0" prefWidth="800.0" style="-fx-background-color: #0D0332;">
+         <children>
+            <Text fill="WHITE" layoutX="292.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher Page">
+               <font>
+                  <Font name="Cambria Bold" size="35.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <JFXRadioButton fx:id="MaleRadioButton" layoutX="15.0" layoutY="262.0" text="Male">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+         <unSelectedColor>
+            <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+         </unSelectedColor>
+         <selectedColor>
+            <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+         </selectedColor>
+         <toggleGroup>
+            <ToggleGroup fx:id="Gender" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="FemaleRadioButton" layoutX="106.0" layoutY="262.0" text="Female" toggleGroup="$Gender">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+         <unSelectedColor>
+            <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+         </unSelectedColor>
+         <selectedColor>
+            <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+         </selectedColor>
+      </JFXRadioButton>
+      <JFXButton layoutX="322.0" layoutY="273.0" onAction="#SearchTeacher" prefHeight="53.0" prefWidth="177.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2.5 2.5 2.5 2.5;" styleClass="outline" stylesheets="@fxml.css" text="Search">
+         <font>
+            <Font name="Cambria Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="583.0" layoutY="128.0" onMouseClicked="#openAddTeacher1" prefHeight="53.0" prefWidth="177.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2.5 2.5 2.5 2.5;" styleClass="outline" stylesheets="@fxml.css" text="Add Teacher">
+         <font>
+            <Font name="Cambria Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="583.0" layoutY="211.0" onAction="#RemoveTeacher" prefHeight="53.0" prefWidth="177.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2.5 2.5 2.5 2.5;" styleClass="outline" stylesheets="@fxml.css" text="Remove Teacher">
+         <font>
+            <Font name="Cambria Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Text fontSmoothingType="LCD" layoutX="376.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="12.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher ID">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="CityTexTfield" layoutX="312.0" layoutY="119.0" prefHeight="27.0" prefWidth="90.0" promptText="City" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0D0332;" />
+      <TextField fx:id="StreetTextField" layoutX="425.0" layoutY="119.0" prefHeight="27.0" prefWidth="90.0" promptText="Street" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0D0332;" />
+      <Text fontSmoothingType="LCD" layoutX="357.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="PhoneNumberTextField" layoutX="332.0" layoutY="210.0" prefHeight="27.0" prefWidth="169.0" promptText="Phone Number" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0D0332;" />
+   </children>
+</Pane>
+-->
+
+<Pane fx:id="MTHome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Manager_TeacherHomeController">
+   <children>
+      <TextField fx:id="FirstNameTextField" layoutX="11.0" layoutY="183.0" prefHeight="25.0" prefWidth="90.0" promptText="First Name" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0D0332;" />
+      <TextField fx:id="SecondNameTextField" layoutX="109.0" layoutY="183.0" prefHeight="25.0" prefWidth="90.0" promptText="Middle Name" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0D0332;" />
+      <TextField fx:id="LastNameTextField" layoutX="208.0" layoutY="183.0" prefHeight="25.0" prefWidth="90.0" promptText="Last Name" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0D0332;" />
+      <Text layoutX="16.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="TeacherIdTexField" layoutX="106.0" layoutY="100.0" prefHeight="27.0" prefWidth="177.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0D0332;" />
+      <Line endX="-192.0" endY="-104.0" layoutX="499.0" layoutY="163.0" opacity="0.5" startX="-192.0" startY="109.0" strokeWidth="0.5">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.125" green="0.4736842215061188" blue="0.4678727984428406" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Line>
+      <Text layoutX="14.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Text>
+      <Line endX="-192.0" endY="-104.0" layoutX="717.0" layoutY="163.0" opacity="0.5" startX="-192.0" startY="109.0" strokeWidth="0.5">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.125" green="0.4736842215061188" blue="0.4678727984428406" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Line>
+      <Text layoutX="609.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="More Operations">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Text>
+      <TableView fx:id="TeacherTable" layoutY="341.0" prefHeight="310.0" prefWidth="800.0" stylesheets="@fxml.css">
+         <columns>
+            <TableColumn fx:id="TeacherIDCol" prefWidth="75.0" text="TID" />
+            <TableColumn fx:id="FirstNameCol" prefWidth="75.0" text="First Name" />
+            <TableColumn fx:id="LastNameCol" prefWidth="75.0" text="Last Name" />
+            <TableColumn fx:id="SalaryCol" prefWidth="75.0" text="Salary" />
+            <TableColumn fx:id="StartDateCol" prefWidth="96.0" text="Start Date" />
+            <TableColumn fx:id="CityCol" prefWidth="103.0" text="City" />
+            <TableColumn fx:id="StreetCol" prefWidth="82.0" text="Street" />
+            <TableColumn fx:id="GenderCol" prefWidth="99.0" text="Gender" />
+            <TableColumn fx:id="PhoneNumberCol" prefWidth="119.0" text="Phone Number" />
+         </columns>
+         <styleClass>
+            <String fx:value="table-row-cell" />
+            <String fx:value="column-header" />
+         </styleClass>
+      </TableView>
+      <Pane prefHeight="86.0" prefWidth="800.0" style="-fx-background-color: #0D0332;">
+         <children>
+            <Text fill="WHITE" layoutX="292.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher Page">
+               <font>
+                  <Font name="Cambria Bold" size="35.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <JFXRadioButton fx:id="MaleRadioButton" layoutX="15.0" layoutY="262.0" text="Male">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+         <unSelectedColor>
+            <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+         </unSelectedColor>
+         <selectedColor>
+            <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+         </selectedColor>
+         <toggleGroup>
+            <ToggleGroup fx:id="Gender" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="FemaleRadioButton" layoutX="106.0" layoutY="262.0" text="Female" toggleGroup="$Gender">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+         <unSelectedColor>
+            <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+         </unSelectedColor>
+         <selectedColor>
+            <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+         </selectedColor>
+      </JFXRadioButton>
+      <JFXButton layoutX="322.0" layoutY="273.0" onAction="#SearchTeacher" prefHeight="53.0" prefWidth="177.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2.5 2.5 2.5 2.5;" styleClass="outline" stylesheets="@fxml.css" text="Search">
+         <font>
+            <Font name="Cambria Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="583.0" layoutY="128.0" onMouseClicked="#openAddTeacher1" prefHeight="53.0" prefWidth="177.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2.5 2.5 2.5 2.5;" styleClass="outline" stylesheets="@fxml.css" text="Add Teacher">
+         <font>
+            <Font name="Cambria Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="583.0" layoutY="202.0" onAction="#RemoveTeacher" prefHeight="53.0" prefWidth="177.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2.5 2.5 2.5 2.5;" styleClass="outline" stylesheets="@fxml.css" text="Remove Teacher">
+         <font>
+            <Font name="Cambria Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Text fontSmoothingType="LCD" layoutX="376.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="12.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher ID">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="CityTexTfield" layoutX="312.0" layoutY="119.0" prefHeight="27.0" prefWidth="90.0" promptText="City" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0D0332;" />
+      <TextField fx:id="StreetTextField" layoutX="425.0" layoutY="119.0" prefHeight="27.0" prefWidth="90.0" promptText="Street" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0D0332;" />
+      <Text fontSmoothingType="LCD" layoutX="357.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="PhoneNumberTextField" layoutX="332.0" layoutY="210.0" prefHeight="27.0" prefWidth="169.0" promptText="Phone Number" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0D0332;" />
+      <JFXButton layoutX="583.0" layoutY="278.0" onAction="#TeacherReport" prefHeight="53.0" prefWidth="177.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2.5 2.5 2.5 2.5;" styleClass="outline" stylesheets="@fxml.css" text="Report">
+         <font>
+            <Font name="Cambria Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

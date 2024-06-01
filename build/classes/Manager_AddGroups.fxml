@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="MGHome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="806.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Manager_AddGroupsController">
+   <children>
+      <Pane prefHeight="93.0" prefWidth="806.0" style="-fx-background-color: #0D0332;">
+         <children>
+            <Text fill="WHITE" layoutX="304.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Group Page">
+               <font>
+                  <Font name="Cambria Bold" size="35.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text layoutX="33.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group ID">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="GroupIDTextField" layoutX="136.0" layoutY="94.0" prefHeight="25.0" prefWidth="171.0" style="-fx-background-color: transparent; -fx-border-color: #0D0332; -fx-border-width: 0px 0px 2px 0px;" />
+      <Text layoutX="25.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group Name">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="GroupNameTextField" layoutX="136.0" layoutY="144.0" prefHeight="25.0" prefWidth="171.0" style="-fx-background-color: transparent; -fx-border-color: #0D0332; -fx-border-width: 0px 0px 2px 0px;" />
+      <Text layoutX="24.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Time">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="StartTimeTextField" layoutX="136.0" layoutY="198.0" prefHeight="27.0" prefWidth="171.0" style="-fx-background-color: transparent; -fx-border-color: #0D0332; -fx-border-width: 0px 0px 2px 0px;" />
+      <JFXRadioButton fx:id="STTRadioButton" layoutX="431.0" layoutY="158.0" text="Sun - Tu - Th">
+         <font>
+            <Font name="Cambria Bold" size="15.0" />
+         </font>
+         <selectedColor>
+            <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+         </selectedColor>
+         <unSelectedColor>
+            <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+         </unSelectedColor>
+         <toggleGroup>
+            <ToggleGroup fx:id="Toggle" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="SMWRadioButton" layoutX="603.0" layoutY="158.0" text="Sat - Mon - Wed" toggleGroup="$Toggle">
+         <font>
+            <Font name="Cambria Bold" size="15.0" />
+         </font>
+         <selectedColor>
+            <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+         </selectedColor>
+         <unSelectedColor>
+            <Color red="0.05098039284348488" green="0.0117647061124444" blue="0.19607843458652496" />
+         </unSelectedColor>
+      </JFXRadioButton>
+      <Text layoutX="385.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher:">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="23.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Specilization">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="625.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Text>
+      <TableView fx:id="GroupsTable" layoutX="-2.0" layoutY="359.0" prefHeight="304.0" prefWidth="806.0" stylesheets="@fxml.css">
+         <columns>
+            <TableColumn fx:id="GroupIDCol" prefWidth="110.5" text="Group ID" />
+            <TableColumn fx:id="GroupNameCol" prefWidth="110.5" text="Group Name" />
+            <TableColumn fx:id="PeriodCol" prefWidth="110.5" text="Period" />
+            <TableColumn fx:id="MaterialCol" prefWidth="110.5" text="Material" />
+            <TableColumn fx:id="StartTimeCol" prefWidth="110.0" text="Start Time" />
+            <TableColumn fx:id="ClassCol" prefWidth="110.0" text="Class" />
+            <TableColumn fx:id="TeacherCol" prefWidth="141.0" text="Teacher Name" />
+         </columns>
+         <styleClass>
+            <String fx:value="table-row-cell" />
+            <String fx:value="column-header" />
+         </styleClass>
+      </TableView>
+      <JFXButton layoutX="350.0" layoutY="301.0" onAction="#SearchGroups" prefHeight="53.0" prefWidth="144.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2.5 2.5 2.5 2.5;" styleClass="outline" stylesheets="@fxml.css" text="Search">
+         <font>
+            <Font name="Cambria Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="497.0" layoutY="301.0" onAction="#AddGroups" prefHeight="53.0" prefWidth="144.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2.5 2.5 2.5 2.5;" styleClass="outline" stylesheets="@fxml.css" text="Add">
+         <font>
+            <Font name="Cambria Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="645.0" layoutY="301.0" onAction="#RemoveGroups" prefHeight="53.0" prefWidth="144.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2.5 2.5 2.5 2.5;" styleClass="outline" stylesheets="@fxml.css" text="Remove">
+         <font>
+            <Font name="Cambria Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="SpecilizationComboBox" focusColor="#0d0332" layoutX="135.0" layoutY="295.0" onAction="#SpecilizationCombobox" prefHeight="25.0" prefWidth="171.0" promptText="Specilization" unFocusColor="#0d0332" />
+      <JFXComboBox fx:id="TeacherComboBox" focusColor="#0d0332" layoutX="475.0" layoutY="242.0" prefHeight="25.0" prefWidth="298.0" unFocusColor="#0d0332" />
+      <JFXComboBox fx:id="ClassComboBox" focusColor="#0d0332" layoutX="680.0" layoutY="196.0" prefHeight="25.0" prefWidth="109.0" unFocusColor="#0d0332" />
+      <Line endX="-74.0" endY="225.0" layoutX="411.0" layoutY="134.0" opacity="0.5" startX="-74.0" startY="-41.0" />
+      <Text layoutX="363.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For Adding Groups">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="554.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Period" textAlignment="CENTER">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="StageCombobox" focusColor="#0d0332" layoutX="136.0" layoutY="245.0" onAction="#StageComboBox" prefHeight="25.0" prefWidth="171.0" unFocusColor="#0d0332" />
+      <Text layoutX="49.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stage">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="383.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Material">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="MaterialComboBox" focusColor="#0d0332" layoutX="475.0" layoutY="196.0" onAction="#MaterialCombobox" prefHeight="25.0" prefWidth="135.0" unFocusColor="#0d0332" />
+   </children>
+</Pane>
